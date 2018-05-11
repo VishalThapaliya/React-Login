@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: url('img/bg.jpg') no-repeat;
+  opacity: 1;
+}
+
+.loginContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  //background: #f2f2f2;
+}
+
+.loginWrapper {
+  width: 100%;
+  //background: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
+
+}
+
+.loginForm {
+  width: 560px;
+  min-height: 75vh;
+  display: block;
+  background-color: #01002b;
+  padding: 150px 55px 55px 55px;
+  opacity: 0.7;
+}
+
+.formTitle {
+  margin-top: -25px;
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  color: #f3ff4c;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.input_container{
+  display: block;
+  text-align: center;
+}
+.input{
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+  display: block;
+  color: rgba(255,255,255,255);
+  font-size: 18px;
+  margin-top: 5%;
+}
+.input_border{
+  display:inline-block;
+  width:0px;
+  height: 2px;
+  background: #fec938;
+  position: relative;
+  top:-5px;
+  -webkit-transition: all ease-in-out .15s;
+  -o-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+}
+.input:hover,
+.input:active,
+.input:focus{
+  outline: none;
+}
+.input:hover+.input_border,
+.input:active+.input_border,
+.input:focus+.input_border{
+  width:100%;
+}
+.flex-sb-m {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.centerText {text-align: center;}
+.rigthText {text-align: right;}
+.text-middle {vertical-align: middle;}
+
+.w-full {width: 100%;}
+.p-t-3 {padding-top: 3px;}
+.p-t-25 {padding-top: 25px;}
+.p-t-46 {padding-top: 46px;}
+
+.p-b-15 {padding-bottom: 15px;}
+.p-b-20 {padding-bottom: 20px;}
+.p-b-32 {padding-bottom: 32px;}
+.p-b-43 {padding-bottom: 43px;}
+
+.text {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+
+.profile-img{
+  background: url('img/logo.png') no-repeat;
+	width: 98px;
+	height: 98px;
+	margin: 15px auto 15px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.formBtn {
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loginBtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 50%;
+  height: 45px;
+  border-radius: 10px;
+  background: #6675df;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 40%;
+  margin-top: 10%;
+  //-webkit-transition: all 0.4s;
+  //-o-transition: all 0.4s;
+//  -moz-transition: all 0.4s;
+  //transition: all 0.4s;
+
+  transition-property: background, border-radius;
+  transition-duration: .2s, .5s;
+  transition-timing-function: linear;
+}
+
+.loginBtn:hover {
+  background: #333333;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.leftScreen {
+  width: calc(100% - 670px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 10%;
+}
+
+.leftScreen::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  //background: rgba(0,0,0,0.5);
+}
+
+.leftText {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+
+.leftScreenImage{
+  background: url('img/testImg.png') no-repeat;
+	width: 50%;
+	height: 80px;
+  //border: 1px solid #01002b;
+	margin: 0 25% 10px;
+	display: block;
+	//-moz-border-radius: 50%;
+	//-webkit-border-radius: 50%;
+	//border-radius: 50%;
+  z-index:0;
+}
+
+//Responsive
+
+@media (max-width: 992px){
+  .loginForm{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .leftScreen{
+    //width: 50%;
+    display: none;
+  }
+
+
+  .leftText {
+      font-size: 12px !important;
+      font-weight: normal !important;
+      margin-left: 4% !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .loginForm {
+    width: 100%;
+  }
+
+  .leftScreen {
+    display: none;
+  }
+
+  .ReactModal__Content {
+    margin-top: 5% !important;
+    margin-left: 20% !important;
+    width: 55% !important;
+    height: 75% !important;
+  }
+
+  .formModal{
+    margin-left: 5% !important;
+    width: 80% !important;
+  }
+
+  .formModal h1{
+    font-size: 22px;
+  }
+
+  .formModal label{
+    margin-left: 5px !important;
+  }
+  .formModal input {
+      width: 80% !important;
+      margin: 8px 2px !important;
+  }
+
+  .formModal button {
+      width: 35% !important;
+  }
+
+  .formModal button:hover {
+      //background-color: #01082b;
+      opacity: 0.8;
+      color: #b6d8c7;
+  }
+  .formModal .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+  }
+
+  .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      color: #000;
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: red;
+      cursor: pointer;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .loginForm {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+  }
+
+  .loginBtn{
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .ReactModal__Content {
+    margin-left: 10% !important;
+  }
+
+}
+
+
+.formModal{
+  background-color: #b6d8c7;
+  margin: 10% auto 10% 5%;
+  //border: 1px solid #01082b;
+  width: 450px;
+}
+
+.formModal h1{
+  text-align: center;
+  font-family: sans-serif;
+  color: #01082b;
+}
+
+.formModal label{
+  font-size: 16px;
+  color: #01082b;
+  margin-left: 10px;
+}
+.formModal input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border:  1px solid #ccc;
+    box-sizing: border-box;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.formModal button {
+    font-weight: bold;
+    background-color: #01082b;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 38%;
+    border-radius: 10px;
+}
+
+.formModal button:hover {
+    //background-color: #01082b;
+    opacity: 0.8;
+    color: #b6d8c7;
+}
+
+.formModal .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.ReactModal__Content {
+  overflow: hidden !important;
+  height: 500px;
+  width: 500px;
+  margin-left: 50%;
+  background-color: #b6d8c7 !important;
+  opacity: 1;
+}
